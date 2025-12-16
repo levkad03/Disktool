@@ -1,14 +1,14 @@
 <script setup lang="ts">
   defineProps<{
-    label: string
-    placeholder?: string
-    type?: string
-    modelValue: string | number
-  }>()
+    label: string;
+    placeholder?: string;
+    type?: string;
+    modelValue: string | number;
+  }>();
 
   defineEmits<{
-    'update:modelValue': [value: string | number]
-  }>()
+    'update:modelValue': [value: string | number];
+  }>();
 </script>
 
 <template>
