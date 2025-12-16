@@ -16,13 +16,13 @@
 
 <template>
   <div
-    class="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition"
+    class="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition overflow-hidden"
   >
-    <div class="flex items-center space-x-4 flex-1">
-      <span class="text-lg font-bold text-blue-600 dark:text-blue-400 w-8">#{{ rank }}</span>
-      <span class="text-gray-800 dark:text-gray-200 truncate">{{ path }}</span>
+    <div class="flex items-center space-x-4 flex-1 min-w-0">
+      <span class="text-lg font-bold text-blue-600 dark:text-blue-400 shrink-0">#{{ rank }}</span>
+      <span class="text-gray-800 dark:text-gray-200 truncate text-sm">{{ path }}</span>
     </div>
-    <span class="text-lg font-semibold text-gray-900 dark:text-white ml-4 whitespace-nowrap">
+    <span class="text-lg font-semibold text-gray-900 dark:text-white ml-4 shrink-0">
       {{ formatBytes(size) }}
     </span>
   </div>
