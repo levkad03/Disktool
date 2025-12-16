@@ -28,7 +28,7 @@
   <h2>Disk Tool</h2>
 
   <input v-model="path" placeholder="Path" />
-  <input type="number" v-model="top" />
+  <input v-model="top" type="number" />
   <button @click="scan">Scan</button>
 
   <pre v-if="report">{{ report }}</pre>
